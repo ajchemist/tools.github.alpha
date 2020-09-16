@@ -22,7 +22,7 @@
 
 
 (defn -main
-  [& [op xs]]
+  [op & xs]
   (case op
     "list-secrets"
     (let [{:keys [options] :as _parsed}   (cli/parse-opts xs cli-options--list-secrets)
